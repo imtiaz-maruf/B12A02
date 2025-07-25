@@ -442,3 +442,69 @@ nav {
 
 
 }
+
+/* join-us section */
+.join-us-ctr {
+    max-width: 100vw;
+    background: url("../images/news-letter-bg.png") no-repeat center;
+    background-size: cover;
+    height: 500px;
+
+
+
+    /*  */
+}
+
+.join-us {
+    max-width: 100%;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #07334f8c, #07334f8c);
+}
+
+.join-ctr {
+    width: 835px;
+    display: flex;
+    margin-top: 23px;
+    height: 140px;
+
+
+
+
+
+
+}
+
+.email-join {
+    width: 650px;
+
+
+
+}
+
+
+
+.subscription-btn {
+    width: 185px;
+
+    padding: 15px;
+    border: none;
+
+
+
+    background-color: #E95A08;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+
+}
+
+.input-email {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    flex: 1;
+}
