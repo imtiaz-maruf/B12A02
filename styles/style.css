@@ -25,7 +25,17 @@
 .container {
     /* background-color: #1e1e1e00; */
     background-color: rgba(245, 248, 255, 1.000);
-    width: 100vw;
+    width: 100%;
+}
+
+/* shared style */
+
+.orange-font-color {
+    color: #E95A08;
+}
+
+.orange-bg-color {
+    background-color: #E95A08;
 }
 
 nav {
@@ -109,4 +119,147 @@ nav {
     font-family: "Inter", sans-serif;
     font-size: 22px;
     color: #0000007a;
+}
+
+/* our plants section */
+.our-plants {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
+
+.our-plants-header {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+    text-align: center;
+}
+
+.our-plants-sub-header {
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    color: #0000007a;
+    text-align: center;
+    margin-top: 16px;
+}
+
+/* card section */
+
+#card-wrapper {
+    /* background-color: #E95A08; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2px;
+    row-gap: 2px;
+    margin-top: 50px;
+
+
+
+
+}
+
+.flower-card {
+    text-align: center;
+    /* background-color: #8987A1; */
+    max-width: 270px;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.card-image {
+    max-width: 270px;
+}
+
+.flower-name {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: #111111;
+    padding-top: 30px;
+}
+
+.frower-price {
+    font-family: "Inter", sans-serif;
+    color: #111111;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.add-to-cart-btn {
+    background-color: #E95A08;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+
+    border: none;
+    max-width: 270px;
+    width: 100%;
+
+
+    padding: 10px 26px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #e95a08af;
+
+}
+
+/* plant lover section */
+.plant-lovers-image {
+    width: 50%;
+
+
+}
+
+.plant-lovers {
+    display: flex;
+    max-width: 1140px;
+    margin: auto;
+    /* background-color: aqua; */
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.plant-lovers-right-text-heading {
+    font-family: "Noto Serif", serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+
+.plant-lovers-right-text {
+    padding-left: 60px;
+    padding-right: 10px;
+
+}
+
+.plant-lovers-right-text-bullets {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    color: #00000077;
+
+}
+
+.plant-lovers-right-text-bullets li {
+    margin-top: 15px;
+}
+
+.plant-lovers-badge img {
+    position: absolute;
+    top: -5%;
+    right: 45%;
+
+    width: 286px;
+    z-index: 1;
 }
