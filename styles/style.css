@@ -57,6 +57,11 @@ nav {
     max-width: 100%;
 }
 
+.menu-ctr {
+    display: flex;
+    gap: 60px;
+}
+
 .menu ul {
     list-style: none;
     display: flex;
@@ -123,10 +128,14 @@ nav {
 
 /* our plants section */
 .our-plants {
+
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .our-plants-header {
@@ -142,35 +151,33 @@ nav {
     color: #0000007a;
     text-align: center;
     margin-top: 16px;
+    margin-left: 125px;
+    margin-right: 125px;
 }
 
 /* card section */
 
 #card-wrapper {
     /* background-color: #E95A08; */
-    width: 100%;
+    max-width: 1140px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 2px;
-    row-gap: 2px;
+    column-gap: 1vw;
+    row-gap: 1vh;
     margin-top: 50px;
-
-
-
-
 }
 
 .flower-card {
     text-align: center;
     /* background-color: #8987A1; */
-    max-width: 270px;
+
     justify-content: center;
-    width: 100%;
+
 
 }
 
-.card-image {
-    max-width: 270px;
+.card-image img {
+    max-width: 100%;
 }
 
 .flower-name {
@@ -448,7 +455,7 @@ nav {
     max-width: 100vw;
     background: url("../images/news-letter-bg.png") no-repeat center;
     background-size: cover;
-    height: 500px;
+    height: 168vh;
 
 
 
@@ -458,7 +465,7 @@ nav {
 .join-us {
     max-width: 100%;
     display: flex;
-    height: 500px;
+    height: 168vh;
     justify-content: center;
     align-items: center;
 
@@ -467,7 +474,7 @@ nav {
 }
 
 .join-ctr {
-    width: 835px;
+    width: 78%;
     display: flex;
     margin-top: 23px;
     height: 140px;
@@ -480,7 +487,7 @@ nav {
 }
 
 .email-join {
-    width: 650px;
+    width: 100%;
 
 
 
@@ -571,3 +578,483 @@ nav {
     align-items: center;
     gap: 20px;
 }
+
+@media screen and (max-width: 767px) {
+
+
+    .menu-ctr {
+        display: none;
+
+    }
+
+    nav {
+        padding: 3vw;
+    }
+
+    .logo {
+        max-width: 135px;
+
+    }
+
+    .logo img {
+        max-width: 70%;
+    }
+
+
+    #banner {
+        margin: 0px;
+        padding: 0px;
+        flex-direction: column-reverse;
+
+    }
+
+    .right-image {
+        width: 100%;
+    }
+
+
+
+    .left-text {
+        width: 100%;
+    }
+
+    .main-heading {
+        font-family: "Noto Serif", serif;
+        font-size: 24px;
+        font-weight: bold;
+
+        padding: 15px;
+
+    }
+
+
+
+    .sub-heading {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        color: #0000007a;
+        text-align: left;
+        padding: 15px;
+    }
+
+    .our-plants {
+
+
+        margin-top: 40px;
+
+    }
+
+    .our-plants-header {
+        font-size: 24px;
+
+    }
+
+    .our-plants-sub-header {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        color: #0000007a;
+        padding: 15px;
+        text-align: left;
+        margin: 0px;
+
+
+    }
+
+    #card-wrapper {
+
+        max-width: 97vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2vw;
+        margin-left: auto;
+        margin-right: auto;
+        row-gap: 2vh;
+        margin-top: 28px;
+
+    }
+
+    .flower-name {
+        font-size: 16px;
+    }
+
+    .frower-price {
+
+        font-size: 16px;
+    }
+
+    /* plant lover section */
+    .plant-lovers-image {
+        width: 100%;
+
+
+    }
+
+    .plant-lovers {
+        display: flex;
+        max-width: 100vw;
+
+        /* background-color: aqua; */
+        padding-top: 20px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .plant-lovers-right-text-heading {
+
+        font-size: 24px;
+
+        margin-top: 3vh;
+        /* margin-left: -8vw; */
+
+    }
+
+    .plant-lovers-right-text {
+        /* padding-left: 60px;
+        padding-right: 10px; */
+        padding-left: 2vw;
+        text-align: left;
+
+    }
+
+    .plant-lovers-right-text-bullets {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        color: #00000077;
+        padding-left: 9vw;
+
+    }
+
+    .plant-lovers-right-text-bullets li {
+        margin-top: 15px;
+    }
+
+    .plant-lovers-badge img {
+        display: none;
+    }
+
+    .plant-lovers-image img {
+        width: 100%;
+    }
+
+
+    /* --------------- */
+
+    /* latest deal section */
+
+    .latest-deal {
+        margin: auto;
+        margin-top: 80px;
+        max-width: 97vw;
+        text-align: center;
+
+    }
+
+    .latest-deal-heading {
+        font-size: 24px;
+
+
+    }
+
+    .latest-deal-sub-heading {
+
+
+        font-size: 14px;
+        padding: 1vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+
+
+
+    }
+
+
+    .latest-deal-images {
+        margin-top: 50px;
+        flex-direction: column;
+
+    }
+
+    .left-part {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        margin-bottom: 0px;
+        padding: 2vw;
+        padding-bottom: 0px;
+
+    }
+
+    .right-part {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2vw;
+    }
+
+    .latest-deal-images-1-ctr {
+        max-width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        background: url("../images/1deal-bloom.png") no-repeat center;
+        background-size: cover;
+        margin-top: 2vh;
+
+    }
+
+    .latest-deal-images-2-ctr {
+        max-width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        background: url("../images/2deal-ana.png") no-repeat center;
+        background-size: cover;
+        margin-top: 2vh;
+
+    }
+
+    .latest-deal-images-3-ctr {
+        max-width: 100%;
+        height: 70vh;
+        margin-top: 0px;
+        padding-top: 0px;
+
+        background-size: cover;
+
+
+
+
+    }
+
+    .latest-deal-images-1 {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to bottom, #0000007d, #0000007d);
+
+
+
+
+    }
+
+    .latest-deal-images-2 {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to bottom, #0000007d, #0000007d);
+    }
+
+
+
+    .latest-deal-images-3 {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to bottom, #0000007d, #0000007d);
+
+
+
+    }
+
+    .latest-deal-images-header {
+        font-family: "Noto Serif", serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        justify-content: center;
+
+
+    }
+
+    .latest-deal-images-sub-header {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        text-decoration: underline;
+
+
+
+    }
+
+    .latest-deal-images-header-right {
+        font-family: "Noto Serif", serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        justify-content: center;
+
+
+    }
+
+    .latest-deal-images-sub-header-right {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        text-decoration: underline;
+
+
+
+    }
+
+    /* join-us section */
+    .join-us-ctr {
+        max-width: 100vw;
+        background: url("../images/news-letter-bg.png") no-repeat center;
+        background-size: cover;
+
+        height: 100vh;
+
+        margin-top: 50px;
+
+
+        /*  */
+    }
+
+
+
+    .join-us {
+        max-width: 100%;
+        display: flex;
+        height: 100vh;
+
+
+        flex-direction: column;
+        background-image: linear-gradient(to bottom, #07334f8c, #07334f8c);
+        justify-content: center;
+        align-items: center;
+        padding-top: 20%;
+    }
+
+    .join-ctr {
+        width: 80%;
+        display: flex;
+        margin-top: 23px;
+        height: 140px;
+
+
+
+
+
+
+
+    }
+
+    .email-join {
+        width: 80%;
+
+
+
+    }
+
+
+
+    .subscription-btn {
+        width: 100%;
+
+        padding: 15px;
+        border: none;
+
+
+
+        background-color: #E95A08;
+        color: #FFFFFF;
+        font-family: "Inter", sans-serif;
+
+    }
+
+    .input-email {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        flex: 1;
+    }
+
+    /* footer-section */
+    .footer-ctr {
+        max-width: 97vw;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2vw;
+
+    }
+
+    .footer-p1 {
+        width: 100%;
+    }
+
+    .footer-p1-sub-heading {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        color: #00000076;
+    }
+
+    .footer-p2 {
+        width: 100%;
+        margin-top: 2vh;
+
+
+    }
+
+    .footer-p2 li {
+        list-style: none;
+        line-height: 40px;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        color: #00000076;
+    }
+
+    .footer-p3 {
+        list-style: none;
+        line-height: 40px;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        color: #00000076;
+        width: 20%;
+    }
+
+    .footer-p3 li {
+        list-style: none;
+        line-height: 40px;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        color: #00000076;
+    }
+
+    .social-media-ctr {
+        display: flex;
+        align-items: start;
+    }
+
+    .logos-ctr {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+    }
